@@ -12,6 +12,7 @@ public class ProxyInfo {
     private String packageName;
     private String proxyClassName;
     private TypeElement typeElement;
+    private VariableElement variableElement;
 
     public Map<Integer, VariableElement> injectVariables = new HashMap<>();
 

@@ -1,10 +1,8 @@
 package com.shileiyu.compilingannotation.bean.net;
 
-import com.yushilei.commonapp.common.bean.base.Album;
-import com.yushilei.commonapp.common.bean.base.Focus;
-import com.yushilei.commonapp.common.bean.base.IFocus;
-import com.yushilei.commonapp.common.bean.base.Square;
-import com.yushilei.commonapp.common.bean.base.Topic;
+
+
+import com.shileiyu.compilingannotation.bean.base.*;
 
 import java.util.List;
 

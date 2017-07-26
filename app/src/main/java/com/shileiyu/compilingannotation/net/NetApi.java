@@ -1,5 +1,7 @@
 package com.shileiyu.compilingannotation.net;
 
+import com.shileiyu.RetrofitProxy;
+import com.shileiyu.RetrofitTarget;
 import com.shileiyu.compilingannotation.bean.net.Discovery;
 import com.shileiyu.compilingannotation.bean.net.Recommend;
 
@@ -17,6 +19,7 @@ import retrofit2.http.Query;
  */
 
 public class NetApi {
+    @RetrofitTarget
     public static API api;
     private static final String BASE_URL = "http://mobile.ximalaya.com";
 
@@ -29,6 +32,7 @@ public class NetApi {
         api = retrofit.create(API.class);
     }
 
+    @RetrofitProxy
     public interface API {
         @GET("/mobile/discovery/v3/recommend/ts-1500624532898")
         Call<Discovery> getDiscovery();
